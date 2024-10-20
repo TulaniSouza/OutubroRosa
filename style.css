@@ -30,7 +30,7 @@ header nav ul a {
 }
 
 .sessaoAlerta {
-  height: 50vh;
+  height: 65vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -46,7 +46,7 @@ header nav ul a {
   justify-content: space-evenly;
   align-items: center;
   background-color: #FF69B4;
-  height: 35vh;
+  height: 50vh;
 }
 .sessaoCorrida p {
   width: 50%;
@@ -56,10 +56,67 @@ header nav ul a {
 
 #section3 {
   background-color: #FFD9EC;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+#section3 img {
+  max-width: 35%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hamburguer {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.hamburguer span {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.hamburguer.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(5px);
+}
+.hamburguer.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburguer.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-5px);
+}
+
+.menu-items {
+  display: flex;
+  gap: 20px;
+}
+.menu-items a {
+  color: #E4EEF1;
+  font-size: 20px;
+  text-decoration: none;
+}
+.menu-items.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
   background-color: #FF69B4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -76,6 +133,30 @@ footer {
   }
   header nav ul a {
     font-size: 20px;
+  }
+  .menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 85%;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #c58a1e;
+  }
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .menu-items {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
   .sessaoAlerta {
     height: 80vh;

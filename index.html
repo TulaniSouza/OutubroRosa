@@ -10,19 +10,25 @@
     <title>Conscientização</title>
 </head>
 <body>
-    <header>
+    <header class="navbar">
         <section>
-            <img src="./source/cancer-de-mama 1.png" alt=""/>
+            <img class="menu-icon" src="./source/cancer-de-mama 1.png" alt=""/>
             <h1>OUTUBRO ROSA</h1>
         </section>
         <nav class="menu">
-            <ul class="menu-items">
+            <div class="hamburguer" id="hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-items" id="nav-links">
                 <li><a href="#section1">SOBRE</a></li>
                 <li><a href="#section2">CONSCIENTIZAÇÃO</a></li>
                 <li><a href="#section3">DICAS</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
         <section class="sessaoAlerta" id="section1">
             <p>Outubro Rosa alerta sobre prevenção e diagnóstico precoce do câncer de mama. O mês de Outubro já é conhecido mundialmente como um mês marcado por ações afirmativas relacionadas à prevenção e diagnóstico precoce do câncer de mama. O movimento, conhecido como Outubro Rosa, é celebrado anualmente desde os anos 90.</p>
@@ -40,17 +46,28 @@
         </section>
     </main>
     <footer>
-<img src="./source/github 1.png" alt=""/>
-<img src="./source/instagram.png" alt=""/>
-<img src="./source/linkedin.png" alt=""/>
-<div>
-    <h3>Nome do aluno (a): Tulani Souza</h3>
-    <h3>Nome do instrutor  (a):Fernanda Correa </h3>
-    <h3>Nome do facilitador (a):  João Belo</h3>
-</div>
-<div>
-    <img src="./source/outubro-rosa 1.png" alt=""/>
-</div>
+        <div class="social-icons">
+            <img src="./source/github 1.png" alt=""/>
+            <img src="./source/instagram.png" alt=""/>
+            <img src="./source/linkedin.png" alt=""/>
+        </div>
+        <div class="info">
+            <h3>Nome do aluno (a): Tulani Souza</h3>
+            <h3>Nome do instrutor  (a):Fernanda Correa </h3>
+            <h3>Nome do facilitador (a):  João Belo</h3>
+        </div>
+        <div class="logo">
+            <img src="./source/outubro-rosa 1.png" alt=""/>
+        </div>
     </footer>
+    <script>
+        const hamburguer = document.getElementById('hamburguer');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburguer.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          hamburguer.classList.toggle('open');
+        });
+      </script>
 </body>
 </html>
