@@ -32,6 +32,7 @@ header{
         }
     }
 }
+
 .sessaoAlerta {
     height: 65vh;
     display: flex;
@@ -70,20 +71,25 @@ header{
     img{
         max-width: 35%; 
         object-fit: cover;
-
     }
 }
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .hamburguer {
-    display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
 
-    span {
-        width: 30px;
-        height: 3px;
-        background-color: #fff;
+    img {
+        width: 80px;
+        height: 90px;
         transition: all 0.3s;
+        align-items: flex-start;
+        margin-top: 0.5rem;
+        display: none;
     }
 
     &.open span:nth-child(1) {
@@ -104,7 +110,7 @@ header{
     gap: 20px;
 
     a {
-        color: #E4EEF1;
+        color: #ebdbed;
         font-size: 20px;
         text-decoration: none;
     }
@@ -115,9 +121,8 @@ header{
         position: absolute;
         top: 60px;
         right: 20px;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.311);
         padding: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -142,13 +147,25 @@ footer{
             ul {
                 justify-content: space-evenly;
 
-            
                 a {
                     font-size: 20px;
                 }
             }
         }
     }
+.hamburguer {
+    flex-direction: column;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 100%;
+
+    img {
+        width: 80px;
+        height: 90px;
+        transition: all 0.3s;
+        display: flex;
+    }
+}
 .menu{
     position: relative;
     display: flex;
@@ -156,7 +173,6 @@ footer{
     justify-content: space-between;
     margin-top: 85%;
     cursor: pointer;
-    box-shadow: 2px 2px 4px #c58a1e; 
 }
 .menu-icon {
     display: flex;
@@ -167,14 +183,13 @@ footer{
     cursor: pointer;
 }
 
-
-
 .menu-items {
     display: none;
-    width: 100%;
+    width: 45%;
     flex-direction: column;
-    align-items: flex-start;
     gap: 10px;
+    margin-right: 51%;
+    margin-top:8%;
 }
 
 .sessaoAlerta {
@@ -196,6 +211,17 @@ footer{
         width: 95%;
         font-size: 20px;
        text-align: center;
+    }
+}
+
+footer{
+    flex-direction: column-reverse;
+}
+.menu-items {
+    a {
+        color: #d02de6;
+        font-size: 20px;
+        text-decoration: none;
     }
 }
 }
