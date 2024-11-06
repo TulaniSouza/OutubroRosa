@@ -130,6 +130,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     height: 20vh;
+    align-items: center;
+  }
+  header .logo {
+    justify-content: center;
+    align-items: center;
+    border: solid green;
   }
   header nav {
     width: 100%;
@@ -176,6 +182,11 @@ footer {
     margin-right: 51%;
     margin-top: 8%;
   }
+  .menu-items a {
+    color: #d02de6;
+    font-size: 20px;
+    text-decoration: none;
+  }
   .sessaoAlerta {
     height: 80vh;
     flex-direction: column-reverse;
@@ -194,12 +205,44 @@ footer {
     font-size: 20px;
     text-align: center;
   }
+  #section3 {
+    flex-wrap: nowrap;
+  }
+  #section3 img {
+    max-width: 40%;
+  }
   footer {
     flex-direction: column-reverse;
   }
-  .menu-items a {
-    color: #d02de6;
-    font-size: 20px;
-    text-decoration: none;
+}
+@media (max-width: 500px) {
+  header {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sessaoAlerta {
+    height: 100%;
+  }
+  .sessaoCorrida {
+    height: 100vh;
+  }
+  #section3 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #section3 img {
+    height: 40%;
+    max-width: 45%;
   }
 }/*# sourceMappingURL=style.css.map */

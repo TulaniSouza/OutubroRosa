@@ -73,11 +73,11 @@ header{
         object-fit: cover;
     }
 }
-.logo {
+    .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-}
+    }
 .hamburguer {
     flex-direction: column;
     gap: 5px;
@@ -140,7 +140,15 @@ footer{
         flex-direction: column;
         justify-content: center;
         height: 20vh;
+        align-items: center;
 
+        .logo{
+            justify-content: center;
+            align-items: center;
+            border: solid green;
+
+
+        }
         nav {
             width: 100%;
 
@@ -190,6 +198,12 @@ footer{
     gap: 10px;
     margin-right: 51%;
     margin-top:8%;
+
+    a {
+        color: #d02de6;
+        font-size: 20px;
+        text-decoration: none;
+    }
 }
 
 .sessaoAlerta {
@@ -213,15 +227,51 @@ footer{
        text-align: center;
     }
 }
+    #section3{
+        flex-wrap: nowrap;
 
+        img{
+            max-width: 40%; 
+        }
+    }
 footer{
     flex-direction: column-reverse;
 }
-.menu-items {
-    a {
-        color: #d02de6;
-        font-size: 20px;
-        text-decoration: none;
-    }
+
 }
+@media (max-width:500px) {
+    header{
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    }
+    .sessaoAlerta{
+        height: 100%;
+    }
+    .sessaoCorrida{
+        height: 100vh;
+    }
+    #section3{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+
+        img{
+            height: 40%;
+            max-width: 45%;           
+           
+        }
+    }
 }
