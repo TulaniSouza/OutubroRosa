@@ -135,7 +135,6 @@ footer {
   header .logo {
     justify-content: center;
     align-items: center;
-    border: solid green;
   }
   header nav {
     width: 100%;
@@ -150,13 +149,14 @@ footer {
     flex-direction: column;
     cursor: pointer;
     display: flex;
-    margin-bottom: 100%;
+    margin-bottom: 95%;
   }
   .hamburguer img {
     width: 80px;
     height: 90px;
     transition: all 0.3s;
     display: flex;
+    margin-bottom: 90%;
   }
   .menu {
     position: relative;
@@ -176,37 +176,39 @@ footer {
   }
   .menu-items {
     display: none;
-    width: 45%;
+    width: 60%;
     flex-direction: column;
     gap: 10px;
-    margin-right: 51%;
+    left: 0.1%;
     margin-top: 8%;
   }
   .menu-items a {
-    color: #d02de6;
+    color: #a324b4;
     font-size: 20px;
     text-decoration: none;
+    font-weight: 600;
   }
   .sessaoAlerta {
-    height: 80vh;
+    height: 100%;
     flex-direction: column-reverse;
   }
   .sessaoAlerta p {
     width: 95%;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
   }
   .sessaoCorrida {
-    height: 80vh;
+    height: 100%;
     flex-direction: column;
   }
   .sessaoCorrida p {
     width: 95%;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
   }
   #section3 {
     flex-wrap: nowrap;
+    height: 99vh;
   }
   #section3 img {
     max-width: 40%;
